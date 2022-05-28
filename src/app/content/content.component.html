@@ -38,41 +38,13 @@
           <th>Light</th>
           <th>Status</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>7th May, 2022</td>
-          <td>0</td>
-          <td>0</td>
-          <td>DRY</td>
+        <tr *ngFor="let item of data;let i=index">
+          <td>{{i+1}}</td>
+          <td>{{ format(item.time) }}</td>
+          <td>{{item.sensor1}}</td>
+          <td>{{item.sensor2}}</td>
+          <td>{{status(item.sensor1)}}</td>
         </tr>
-        <tr >
-            <td>2</td>
-            <td>8th May, 2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>DRY</td>
-          </tr>
-          <tr >
-            <td>3</td>
-            <td>9th May, 2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>DRY</td>
-          </tr>
-          <tr >
-            <td>4</td>
-            <td>10th May, 2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>DRY</td>
-          </tr>
-          <tr >
-            <td>5</td>
-            <td>11th May, 2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>DRY</td>
-          </tr>
       </table>
 </div>
 <br>

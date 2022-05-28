@@ -15,7 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +33,7 @@ import {MatButtonModule} from '@angular/material/button';
     SocialLoginModule,
     MatInputModule,
     MatButtonModule,
+    HttpClientModule
     
   ],
   providers: [
