@@ -1,0 +1,17 @@
+.menu
+{
+    display: flex;
+    align-items: center;
+}
+.sprinkler-nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+}
